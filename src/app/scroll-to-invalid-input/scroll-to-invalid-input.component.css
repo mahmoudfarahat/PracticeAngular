@@ -1,0 +1,8 @@
+
+.form-group {
+  margin-bottom: 200px;
+}
+
+.form-control.ng-touched.ng-invalid {
+  border-color: red;
+}

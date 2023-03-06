@@ -1,0 +1,19 @@
+/* Border Color */
+.ng-select.ng-invalid.ng-touched .ng-select-container{
+  border: 1px solid red;
+  border-color: red;
+}
+/* Arrow Color */
+.ng-select.ng-invalid.ng-touched .ng-arrow-wrapper .ng-arrow{
+  border: 1px solid red;
+  border-color: red transparent transparent
+}
+/* Placeholder Color */
+.ng-select.ng-invalid.ng-touched .ng-select-container .ng-placeholder{
+  border: 1px solid red;
+  color: red;
+}
+
+.ng-select.ng-invalid.ng-touched{
+  border: 1px solid red;
+}
