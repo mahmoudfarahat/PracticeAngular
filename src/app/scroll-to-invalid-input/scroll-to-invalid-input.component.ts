@@ -37,7 +37,8 @@ export class ScrollToInvalidInputComponent implements OnInit {
     const firstInvalidControl: HTMLElement = this.el.nativeElement.querySelector(
       "form .ng-invalid"
     );
-
+console.log(firstInvalidControl)
     firstInvalidControl.focus(); //without smooth behavior
   }
+
 }

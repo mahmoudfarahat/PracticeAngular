@@ -10,6 +10,8 @@ import { DirectiveComponent } from './directive/directive.component';
 import { ScrollToInvalidInputComponent } from './scroll-to-invalid-input/scroll-to-invalid-input.component';
 import { NgSelectComponent } from './ng-select/ng-select.component';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ForkJoinComponent } from './fork-join/fork-join.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { NgSelectModule } from '@ng-select/ng-select';
     DirectiveComponent,
     ScrollToInvalidInputComponent,
     NgSelectComponent,
+    NavbarComponent,
+    ForkJoinComponent,
 
   ],
   imports: [

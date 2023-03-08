@@ -1,6 +1,7 @@
 
 <div class="container">
-  <form role="form" #MySelectForm="ngForm"     (submit)="onFormSubmit()">
+  <button (click)="getData()">Data</button>
+  <form role="form"      (submit)="onFormSubmit()">
 
     <div class="form-group">
         <fieldset class="form-group">
@@ -13,6 +14,7 @@
             bindLabel="customText"
             placeholder="Select"
             required
+            [formControl]="control"
             [disabled]="isFormDisabled">
             </ng-select>
           </fieldset>
@@ -27,3 +29,18 @@
   </form>
 
 </div>
+<div class="my-container">
+  <div class="btn-container">
+    <button class="btn btn-danger" (click)="refresh()">Refresh</button>
+  </div>
+  <div class="items-container">
+    <div class="item" *ngFor="let user of users; trackBy: trackByUser">
+      {{ user.name }}
+    </div>
+  </div>
+</div>
+
+
+
+<button (click)="control.markAsTouched()">click</button>
+{{control.touched}}
